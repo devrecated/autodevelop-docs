@@ -9,7 +9,7 @@ import { defineConfig } from "vitepress";
 const SITE_NAME = "Autodevelop";
 const SITE_DESCRIPTION =
   "Install Autodevelop, connect GitHub, and run tickets, mail, and ship gates in a product repository.";
-const SITE_ORIGIN = "https://devprecated.github.io/autodevelop-docs";
+const SITE_ORIGIN = "https://devrecated.github.io/autodevelop-docs";
 const SITE_BASE = "/autodevelop-docs/";
 
 const pageUrl = (relativePath = "") => {
@@ -85,7 +85,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: "github", link: "https://github.com/devprecated/autodevelop-docs" },
+      { icon: "github", link: "https://github.com/devrecated/autodevelop-docs" },
     ],
     outline: [2, 3],
   },

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Autodevelop">
-  <rect width="128" height="128" rx="24" fill="#12324d"/>
-  <rect x="22" y="28" width="56" height="72" rx="8" fill="#f4f1ea"/>
-  <rect x="30" y="40" width="40" height="6" rx="3" fill="#12324d"/>
-  <rect x="30" y="54" width="28" height="5" rx="2.5" fill="#5c7a90"/>
-  <rect x="30" y="66" width="34" height="5" rx="2.5" fill="#5c7a90"/>
-  <path d="M70 58c14-18 40-14 42 10 1 16-10 28-24 32l-2 14-16-18c-8-2-14-10-14-20 0-8 5-14 14-18z" fill="#3db8a0"/>
-  <circle cx="94" cy="72" r="5" fill="#12324d"/>
-</svg>

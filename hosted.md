@@ -20,7 +20,7 @@ An operator issues each subscription. The secret is shown once. Never commit it.
 
 When an organization is lapsed or canceled, paid tools return **`Your billing has expired`**. GitHub issues and instance `config.json` stay in the consumer repository.
 
-Root license is [PolyForm Noncommercial](https://github.com/devprecated/autodevelop-docs/blob/master/LICENSE.md). Commercial use needs a license from Devrecated.
+Root license is [PolyForm Noncommercial](https://github.com/devrecated/autodevelop-docs/blob/master/LICENSE.md). Commercial use needs a license from Devrecated.
 
 ## Related
 

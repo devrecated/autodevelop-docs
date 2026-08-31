@@ -10,12 +10,12 @@ Copyright (c) 2026 Devrecated.
 The customer CLI authorizes a developer machine for a paid Autodevelop organization. Cursor still loads the kit as a user-scope plugin ([Install](install.md)).
 
 ```bash
-npx @devprecated/autodevelop
-npx @devprecated/autodevelop login
-npx @devprecated/autodevelop logout
-npx @devprecated/autodevelop status
-npx @devprecated/autodevelop install [--slug <instance>]
-npx @devprecated/autodevelop github token
+npx @devrecated/autodevelop
+npx @devrecated/autodevelop login
+npx @devrecated/autodevelop logout
+npx @devrecated/autodevelop status
+npx @devrecated/autodevelop install [--slug <instance>]
+npx @devrecated/autodevelop github token
 ```
 
 In a kit checkout the same commands are `pnpm autodevelop …`.

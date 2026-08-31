@@ -14,7 +14,7 @@ This page is the handbook you can send to a team. It covers how the product is u
 | Step | What you do | What you say |
 |---|---|---|
 | Install once | Import the Cursor plugin, then reload the window | `/import-autodevelop` |
-| Sign in | Authorize this machine and install the organization pack | `pnpm autodevelop login` or `npx @devprecated/autodevelop login` |
+| Sign in | Authorize this machine and install the organization pack | `pnpm autodevelop login` or `npx @devrecated/autodevelop login` |
 | Connect GitHub | An operator installs the Autodevelop GitHub App on the GitHub org | Connect GitHub in the operator console |
 | Check the machine | Run doctor. It never sends mail | `pnpm doctor` |
 | File or claim work | A request becomes a numbered preview, then a board ticket | **create**, **use #N**, or claim an item |

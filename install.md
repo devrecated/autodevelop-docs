@@ -37,7 +37,7 @@ Do not put `config.json`, `people.json`, or instance policies in the plugin. Tho
 pnpm autodevelop login
 ```
 
-When the thin package is published, the same command is `npx @devprecated/autodevelop login`. The CLI opens a browser page with a device code. Approve this machine. A lapsed organization stops with `Your billing has expired`.
+When the thin package is published, the same command is `npx @devrecated/autodevelop login`. The CLI opens a browser page with a device code. Approve this machine. A lapsed organization stops with `Your billing has expired`.
 
 Paste the subscription token under **Plugins → Configure** if the operator issued one. Never commit it.
 
