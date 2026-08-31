@@ -1,0 +1,17 @@
+{
+  "name": "autodevelop-docs",
+  "private": true,
+  "type": "module",
+  "description": "Public Autodevelop handbook — install, CLI, GitHub App, and day-to-day use.",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}
