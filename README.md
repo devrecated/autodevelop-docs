@@ -13,4 +13,4 @@ pnpm docs:dev
 
 The site opens at `http://localhost:5173/autodevelop-docs/`.
 
-The published handbook is [https://devprecated.github.io/autodevelop-docs/](https://devprecated.github.io/autodevelop-docs/). Pushes to `master` deploy it with GitHub Actions.
+The published handbook is [https://devrecated.github.io/autodevelop-docs/](https://devprecated.github.io/autodevelop-docs/).
