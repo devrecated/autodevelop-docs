@@ -13,9 +13,9 @@ This page is the handbook you can send to a team. It covers how the product is u
 
 | Step | What you do | What you say |
 |---|---|---|
-| Install once | Import the Cursor plugin, then reload the window | `/import-autodevelop` |
-| Sign in | Authorize this machine and install the organization pack | `pnpm autodevelop login` or `npx @devrecated/autodevelop login` |
-| Connect GitHub | An operator installs the Autodevelop GitHub App on the GitHub org | Connect GitHub in the operator console |
+| Install once | Install the private package the operator issued | `npm install /path/to/devrecated-autodevelop-0.1.0.tgz` |
+| Sign in | Authorize this machine, apply the kit tar, and install the organization pack | `npx @devrecated/autodevelop login` |
+| Connect GitHub | Install the Autodevelop GitHub App from the same CLI | `npx @devrecated/autodevelop github init` |
 | Check the machine | Run doctor. It never sends mail | `pnpm doctor` |
 | File or claim work | A request becomes a numbered preview, then a board ticket | **create**, **use #N**, or claim an item |
 | Mail a stakeholder | Review to, subject, body-as-text, and ticket link | An explicit yes, then the confirm token |
@@ -25,9 +25,9 @@ Details: [Install](install.md), [CLI](cli.md), [GitHub App](github.md), [Configu
 
 Organization members who use the **ticket UI** are invited, then they sign in. They choose a request type (bug, improvement, tweak, new feature, new microfrontend, or new web app) and answer the questions for that type. The same UI can open from a button or link in your own product. There is no public registration.
 
-Owners and executives sign in to the **business console** to review work, team activity, delivery value, usage, payment, and weekly meetings. An operator assigns what each person can do.
+Owners and executives sign in to the **business console** to review work, team activity, delivery value, weekly jobs, usage, payment, and weekly meetings. An operator assigns what each person can do. Weekly delivery value and weekly status run from the Jobs panel on that console or the operator console.
 
-The Cursor plugin uses a subscription token under **Plugins → Configure**. That token is not a website login.
+The CLI stores a subscription token after device login. That token is not a website login.
 
 ## What you can do
 
@@ -36,7 +36,7 @@ The Cursor plugin uses a subscription token under **Plugins → Configure**. Tha
 | Tickets and the board | Turn a request into a GitHub Project issue, claim it, comment, and verify acceptance |
 | Stakeholder mail | Draft allowlisted email. Hooks never send. A human confirms every draft |
 | Ship | Phrase-gated git and local deploys. Staging and production stay separate unless the instance is single-branch |
-| Setup | Plugin, CLI, GitHub App, instance files, and `pnpm doctor` |
+| Setup | Private package, CLI, GitHub App, instance files, and `pnpm doctor` |
 | In-app tickets | Open submit and “my tickets” from a button or link in your application |
 
 ## Workflows

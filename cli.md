@@ -1,13 +1,13 @@
 ---
 title: Autodevelop CLI
-description: Sign in on this machine, install the organization pack, and mint a short-lived GitHub App token.
+description: Sign in on this machine, apply the kit tar, install the organization pack, and mint a short-lived GitHub App token.
 ---
 
 # Autodevelop CLI
 
 Copyright (c) 2026 Devrecated.
 
-The customer CLI authorizes a developer machine for a paid Autodevelop organization. Cursor still loads the kit as a user-scope plugin ([Install](install.md)).
+The customer CLI authorizes a developer machine for a paid Autodevelop organization. An operator issues the private `@devrecated/autodevelop` package. `login` writes skills into this repository, then the organization pack ([Install](install.md)).
 
 ```bash
 npx @devrecated/autodevelop
@@ -15,46 +15,11 @@ npx @devrecated/autodevelop login
 npx @devrecated/autodevelop logout
 npx @devrecated/autodevelop status
 npx @devrecated/autodevelop install [--slug <instance>]
+npx @devrecated/autodevelop github init
+npx @devrecated/autodevelop github status
 npx @devrecated/autodevelop github token
 ```
 
 In a kit checkout the same commands are `pnpm autodevelop …`.
 
-`AUTODEVELOP_HOST` selects the host when you are not on the default production host. `AUTODEVELOP_TOKEN` wins over the credentials file when set. Do not put the token in `config.json`.
-
-## Commands
-
-| Command | What it does |
-|---|---|
-| `login` | Opens a device-code page. After you approve this machine, stores a credential and installs the organization pack |
-| `logout` | Removes the stored credential on this machine. Environment variables are unchanged |
-| `status` | Shows whether this machine is signed in, the host, and the local pack version |
-| `install` | Installs or refreshes the organization pack into the current repository |
-| `github token` | Mints a short-lived GitHub App installation token for `gh`. Prints expiry and account, not the token |
-
-## Paywall
-
-| State | What happens |
-|---|---|
-| No credential | Device login opens. No pack. No GitHub token. |
-| Signed in, organization not active | Stop. `Your billing has expired`. No files written. |
-| Active subscription | Login, pack install, and GitHub token mint run. |
-
-There is no public signup. An operator invites the owner, then the owner signs in.
-
-## GitHub token
-
-Connect the App first ([GitHub App](github.md)). Then:
-
-```bash
-pnpm autodevelop github token
-```
-
-Export `GH_TOKEN` yourself if you want `gh` to use it for that process. The CLI does not print the token. Do not persist it in `config.json`.
-
-## Related
-
-- [Install](install.md)
-- [GitHub App](github.md)
-- [Initial setup](workflows/initial-setup.md)
-- [When something breaks](workflows/when-something-breaks.md)
+`AUTODEVELOP_HOST` selects the host when you are not on the default production host. Consumer apps select the API with `AUTODEVELOP_API_ORIGIN` and the ticket UI with `NEXT_PUBLIC_AUTODEVELOP_TICKETS_ORIGIN`. Local sandbox defaults apply only on a local machine. `AUTODEVELOP_TOKEN` wins over the credentials file when set. Do not put the token in `config.json`.
